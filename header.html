@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purrfect Vibes - Header</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            <input type="checkbox" class="navToggler" id="navToggler">
+            <nav>
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="features.html">Features</a>
+                       <ul class="subMenu">
+                            <li><a href="#">Cat care</a></li>
+                            <li><a href="#">Quizzes</a></li>
+                            <li><a href="#">Community</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="community.html">Community</a></li>
+                    <li class="button"><a href="contact.html" class="button">Contact</a></li>
+                </ul>
+            </nav>
+            <label for="navToggler" class="navTogglerMenu" name="navToggler">
+                <img src="images/menu.svg" class="menuOpen" alt="menu">
+                <img  src="images/x.svg" class="menuClose" alt="close menu">
+            </label>
+        </div>
+    </header>
+    <section>
+    <address>
+        Perrfect Vibes HQ<br>
+        123 Whiskers Lane<br>
+        Meowtown, CA. 90210<br>
+        (555)867-5309
+    </address>
+    <form action="send-email.php" method="post">
+        <fieldset>
+        <legend>Contact Us</legend>
+          <p><h3>Note: Fields highlighted in red are required.</h3></p>
+
+            <div class="group" >
+                <label for="fname"> First name</label>
+                <input type="text" name="fname" size="30" required autofocus placeholder="Enter your first name" 
+                target="blank"><br>
+            </div>
+            
+            <div  class="group"  >
+                <label for="lname"> Last name</label>
+                <input type="text" name="lname" size="40" required autofocus placeholder="Enter your last name" 
+                 target="blank"><br>
+            </div>
+
+             <div lass="group"  >
+                <label for="Organization">Organization (If any)</label>
+                <input class="inputOrganization" type="text" name="lname" size="40" autofocus placeholder="Enter your last name" 
+                target="blank"><br>
+             </div>
+
+             <div class="group" >
+                <label for="phone">Phone number</label><br>
+                <input type="tel" id="phone" name="phone" required>
+             </div>
+
+              <div class="group">
+                <label  for="email">Email:</label><br>
+                <input type="email" name="email" id="email" required><br>
+              </div>
+
+        </fieldset>
+          <legend class="checkbox">Feline Interest</legend><br>
+            <input type="checkbox" name="product" value="cat wellness">cat wellness
+            <input type="checkbox" name="product" value="cat wellness">cat training
+            <input type="checkbox" name="product" value="cat wellness">cat adoption<br><br>
+
+          <legend class="checkbox">Your cat's lifestyle</legend><br>
+            <input type="checkbox" name="product" value="cat wellness">cat wellness
+            <input type="checkbox" name="product" value="cat wellness">cat training
+            <input type="checkbox" name="product" value="cat wellness">cat adoption<br><br>
+
+
+          <legend>How many cat's do you have</legend><br>
+            <textarea name="message" id="catNumber" cols="30" rows="10"></textarea><br>
+           <legend>How did you hear about Purrfect Vibes?</legend><br><br>
+       <textarea name="message" id="hearAbout" cols="30" rows="10"></textarea><br>
+           <legend>Questions for Purrfect Vibes</legend><br><br>
+       <textarea name="message" id="purrfectVibes" cols="30" rows="10"></textarea>
+
+       <input type="submit" value="Submit to Purrfect Vibes" class="btn"> 
+</form>
+    </section>
+</body>
+</html>
